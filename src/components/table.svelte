@@ -69,7 +69,7 @@
 	{#each todo as element, i}
 		<tr>
 			<td>{element[0]}</td>
-			<td>{digits(element[1][1], 2)}:{digits(element[1][1], 2)}</td>
+			<td>{digits(element[1][0], 2)}:{digits(element[1][1], 2)}</td>
 			<td>
 				<input type="checkbox" name={i} checked={is_done[i]} on:change={toggle} />
 			</td>
